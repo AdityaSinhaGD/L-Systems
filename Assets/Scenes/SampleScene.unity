@@ -169,7 +169,7 @@ MonoBehaviour:
   rules:
   - {fileID: 11400000, guid: f440d27c6f00d4a44bc520f8b6b02633, type: 2}
   axiom: '[F]--F'
-  iterationLimit: 6
+  iterationLimit: 3
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

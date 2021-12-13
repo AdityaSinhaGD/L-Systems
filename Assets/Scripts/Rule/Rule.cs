@@ -9,8 +9,17 @@ public class Rule : ScriptableObject
     [SerializeField]
     private string[] results = null;
 
+    [SerializeField]
+    private bool randomRulePerIteration = false;
+
     public string GetResult()
     {
+        if(randomRulePerIteration)
+        {
+            int randIndex = UnityEngine.Random.Range(0, results.Length);
+            return results[randIndex];
+        }
         return results[0];
+
     }
 }
